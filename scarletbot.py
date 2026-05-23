@@ -18,7 +18,7 @@ def get_status():
 
     soup = BeautifulSoup(response.text, "html.parser")
 
-    status = soup.find("h1", class_="status")
+    status = soup.find("h1", class_="status svelte-1w0cweh")
 
     if status:
         return status.text.strip()
